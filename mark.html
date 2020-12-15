@@ -34,44 +34,70 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-light bg-main">
+	<nav class="navbar navbar-expand-lg navbar-light bg-main">
 	  <div class="container">
 	    <a class="navbar-brand" href="#">
 	      <img src="https://sfedu.ru/index2015/logo_small.png" alt="" width="30" height="24">
 	    </a>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+
+      </ul>
+      <form class="d-flex">
+      	<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Анатолий Антоненко
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Профиль</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Выход</a></li>
+          </ul>
+        </li>
+      </ul>
+      	
+      </form>
+    </div>
 	  </div>
 	</nav>
 
 	<main>
 		<section>
-			<div class="container login_block">
+			<div class="container main_block">
+				<h1 class="page_title">Предмет: Безопасность информационных технологий</h1>
 				<div class="row">
-					<div class="col-md-6">
-						<div class="signin-image">
-						<figure><img src="img/signin-image.jpg" alt="sing up image"></figure>
-						<!-- <a href="#" class="signup-image-link">Create an account</a> -->
-						</div>
-					</div>
-					<div class="col-md-6">
-						<h1 class="text-center">Авторизация</h1>
-						<form>
-							<div class="mb-3">
-							<label for="exampleInputEmail1" class="form-label">Email</label>
-							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-							    <div id="validationServer03Feedback" class="invalid-feedback">
-							      Неправильный email или пароль.
-							    </div>
-							</div>
-							<div class="mb-3">
-							<label for="exampleInputPassword1" class="form-label">Пароль</label>
-							<input type="password" class="form-control" id="exampleInputPassword1">
-							</div>
-							<div class="mb-3 form-check">
-							<input type="checkbox" class="form-check-input" id="exampleCheck1">
-							<label class="form-check-label" for="exampleCheck1">Оставаться в системе</label>
-							</div>
-							<button type="submit" class="btn btn-main">Войти</button>
-						</form>
+					<div class="col-md-12">
+						<div class="bd-example">
+  <table class="main_table table table-sm">
+      <thead>
+    <tr>
+      <th scope="col">Работа</th>
+      <th scope="col">Баллы</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Лабораторная 1</th>
+      <td>4.1</td>
+    </tr>
+    <tr>
+      <th scope="row">Лабораторная 2</th>
+      <td>4.1</td>
+    </tr>
+    <tr>
+      <th scope="row">Лабораторная 3</th>
+      <td>4.1</td>
+    </tr>
+
+  </tbody>
+
+  </table>
+</div>
 					</div>
 				</div>
 				
@@ -80,14 +106,6 @@
 		</section>
 	</main>
 	<div class="hidden"></div>
-
-
-	<!--[if lt IE 9]>
-	<script src="libs/html5shiv/es5-shim.min.js"></script>
-	<script src="libs/html5shiv/html5shiv.min.js"></script>
-	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
-	<script src="libs/respond/respond.min.js"></script>
-	<![endif]-->
 
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/waypoints/waypoints.min.js"></script>
