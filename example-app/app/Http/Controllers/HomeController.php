@@ -25,4 +25,29 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+
+
+
+    public function teacherSubjects()
+    {
+        return view('teacher-subject');
+    }
+    public function teacherSubjectMarks()
+    {
+        return view('teacher-subject-marks');
+    }
+    public function teacherEvents()
+    {
+        return view('teacher-events');
+    }
+    public function allPerformance()
+    {
+        return view('all-performance');
+    }
+    public function subjectPerformance()
+    {
+        return view('subject-performance');
+    }
+
 }

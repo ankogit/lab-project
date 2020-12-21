@@ -45,16 +45,16 @@
         <li class="nav-item">
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#">Пользователи</a>
+          <a class="nav-link" href="#">Пользователи</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#">Группы</a>
+          <a class="nav-link" href="#">Группы</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#">Предметы</a>
+          <a class="nav-link" href="#">Предметы</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Создать
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -74,6 +74,8 @@
             Анатолий Антоненко
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Профиль</a></li>
+            <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Выход</a></li>
           </ul>
         </li>
@@ -87,43 +89,64 @@
 	<main>
 		<section>
 			<div class="container main_block">
-				<h1 class="page_title">Создание нового пользователя</h1>
+				<h1 class="page_title">Мои предметы</h1>
+
+                      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="" >
+        <button class="btn btn-main" type="submit">Поиск</button>
+      </form>
 				<div class="row">
-					<div class="col-md-6">
-            <form>
-              <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">ФИО</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <div id="validationServer03Feedback" class="invalid-feedback">
-                    Длинна поля меньше 5 символов.
-                  </div>
-              </div>
-              <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <div id="validationServer03Feedback" class="invalid-feedback">
-                    Данный еmail уже занят.
-                  </div>
-              </div>
-              <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Пароль</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
-                  <div id="validationServer03Feedback" class="invalid-feedback">
-                    Слабый пароль
-                  </div>
-              </div>
+					<div class="col-md-12">
+						<div class="bd-example">
+  <table class="main_table table table-sm">
+      <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Название предмета</th>
+      <th scope="col">Группа</th>
+      <th scope="col">Действие</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Математика</td>
+      <td>КТбо1-1</td>
+      <td><a href="#">Оценки</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Математика</td>
+      <td>КТбо1-1</td>
+      <td><a href="#">Оценки</a></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Математика</td>
+      <td>КТбо1-1</td>
+      <td><a href="#">Оценки</a></td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Математика</td>
+      <td>КТбо1-1</td>
+      <td><a href="#">Оценки</a></td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>Математика</td>
+      <td>КТбо1-1</td>
+      <td><a href="#">Оценки</a></td>
+    </tr>
 
-              <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Роль</label>
-              <select class="form-select" aria-label="Default select example">
-                <option value="1">Студент</option>
-                <option value="2">Преподаватель</option>
-                <option value="3">Администратор</option>
-              </select>
-              </div>
 
-              <button type="submit" class="btn btn-main">Создать</button>
-            </form>
+    
+
+
+  </tbody>
+
+  </table>
+</div>
 					</div>
 				</div>
 				

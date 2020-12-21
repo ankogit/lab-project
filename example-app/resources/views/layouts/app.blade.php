@@ -25,9 +25,9 @@
     <!-- <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css"> -->
     <link rel="stylesheet" href="libs/animate/animate.css">
 
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/media.css">
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -97,7 +97,7 @@
                                     <li><a class="dropdown-item" href="{{ route('logout') }}"
                                            onclick="event.preventDefault();
                                                      document.getElementById('logoutFrom').submit();">
-                                            {{ __('Logout') }}
+                                            Выход
                                         </a>
                                         <form id="logoutFrom" action="{{ route('logout') }}" method="POST" class="d-none">
                                             @csrf
