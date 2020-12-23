@@ -8,4 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 class Group extends Model
 {
     use HasFactory;
+
+    public $timestamps = false;
+    protected $guarded = [];
+
+    public function users() {
+        return $this->belongsToMany(User::class, 'user_group');
+    }
+
+    public function teacher() {
+        return $this->belongsTo(User::class, 'teacher_id');
+    }
 }

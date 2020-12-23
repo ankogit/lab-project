@@ -19,6 +19,7 @@ class User extends Authenticatable
     protected $fillable = [
         'name',
         'email',
+        'role_id',
         'password',
     ];
 
@@ -40,4 +41,19 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function getRoleNameAttribute()
+    {
+        if($this->role_id == '0')
+            return "Администратор";
+        if($this->role_id == '1')
+            return "Преподаватель";
+        if($this->role_id == '2')
+            return "Студент";
+    }
+
+    public function group() {
+        return $this->belongsToMany(Group::class, 'user_group');
+    }
+
 }

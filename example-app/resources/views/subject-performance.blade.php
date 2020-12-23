@@ -3,7 +3,7 @@
 @section('content')
     <section>
         <div class="container main_block">
-            <h1 class="page_title">Предмет: Безопасность информационных технологий</h1>
+            <h1 class="page_title">Предмет: {{$subject->title}}</h1>
             <div class="row">
                 <div class="col-md-12">
                     <div class="bd-example">
@@ -15,18 +15,13 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <th scope="row">Лабораторная 1</th>
-                                <td>4.1/10</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Лабораторная 2</th>
-                                <td>4.1/5</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Лабораторная 3</th>
-                                <td>4.1/5</td>
-                            </tr>
+                            @foreach($performance as $r)
+                                <tr>
+                                    <th scope="row">{{$r->event->title}}</th>
+                                    <td>{{$r->points}}/{{$r->event->max_points}}</td>
+                                </tr>
+                            @endforeach
+
 
                             </tbody>
 

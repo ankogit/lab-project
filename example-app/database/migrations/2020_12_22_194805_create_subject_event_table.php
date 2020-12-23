@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateGroupsTable extends Migration
+class CreateSubjectEventTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class CreateGroupsTable extends Migration
      */
     public function up()
     {
-        Schema::create('groups', function (Blueprint $table) {
+        Schema::create('subject_event', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-//            $table->integer('teacher_id');
+            $table->integer('subject_id');
+            $table->integer('event_id');
         });
     }
 
@@ -27,6 +27,6 @@ class CreateGroupsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('groups');
+        Schema::dropIfExists('subject_event');
     }
 }

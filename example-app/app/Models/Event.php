@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Event extends Model
 {
     use HasFactory;
+
+    public function subjects() {
+        return $this->belongsToMany(Subject::class, 'subject_event');
+    }
 }

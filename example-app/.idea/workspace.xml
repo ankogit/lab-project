@@ -1,13 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c19b87f4-70ea-44b7-9556-a226d8eefc44" name="Default Changelist" comment="" />
+    <list default="true" id="c19b87f4-70ea-44b7-9556-a226d8eefc44" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminGroupsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminGroupsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminSubjectsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminSubjectsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminUsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminUsersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/AcademicPerformance.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/AcademicPerformance.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Event.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Event.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Group.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Group.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Subject.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Subject.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_20_153949_create_groups_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_20_153949_create_groups_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/groups/all.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/groups/all.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/groups/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/groups/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/groups/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/groups/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/subjects/all.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/subjects/all.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/subjects/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/subjects/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/subjects/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/subjects/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/all.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/all.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/all-performance.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/all-performance.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/subject-performance.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/subject-performance.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/teacher-subject-marks.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/teacher-subject-marks.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/teacher-subject.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/teacher-subject.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -168,7 +195,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608476848917</updated>
-      <workItem from="1608476852415" duration="10394000" />
+      <workItem from="1608476852415" duration="11010000" />
+      <workItem from="1608647619804" duration="19094000" />
+      <workItem from="1608677612488" duration="6062000" />
     </task>
     <servers />
   </component>

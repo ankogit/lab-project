@@ -4,10 +4,10 @@
     <section>
         <div class="container main_block">
             <h1 class="page_title">Дисциплины</h1>
-            <div class="w-100" style="text-align: right;">
-                <a class="text-right active" aria-current="page" href="#">100 бальная система</a>
-                <a class="" aria-current="page" href="#">5 бальная система</a>
-            </div>
+{{--            <div class="w-100" style="text-align: right;">--}}
+{{--                <a class="text-right active" aria-current="page" href="#">100 бальная система</a>--}}
+{{--                <a class="" aria-current="page" href="#">5 бальная система</a>--}}
+{{--            </div>--}}
 
             <div class="row">
                 <div class="col-md-12">
@@ -21,40 +21,29 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <th scope="row"><a href="#">Безопасность информационных технологий</a></th>
-                                <td>Петров Д. А.</td>
-                                <td>
-      	<span class="count">
-      		<span class="g">
-      			4.1
-      		</span>
 
-      	</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><a href="#">Безопасность информационных технологий</a></th>
-                                <td>Петров Д. А.</td>
-                                <td>
-      	<span class="count">
-      		<span class="b">
-      			3.1
-      		</span>
-      	</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><a href="#">Безопасность информационных технологий</a></th>
-                                <td>Петров Д. А.</td>
-                                <td>
-      	<span class="count">
-      		<span class="e">
-      			4.9
-      		</span>
-      	</span>
-                                </td>
-                            </tr>
+                            @foreach($subjects as $r)
+                                <tr>
+                                    <th scope="row"><a href="{{route('subject-performance', $r->id)}}">{{$r->title}}</a></th>
+
+                                    <td>{{$r->teacher->name}}</td>
+                                    <td>
+                                    <span class="count2">
+                                        <span class="g2">
+                                            <?php
+                                            $a =  $AcademicPerformance;
+                                            $a = $a->where('subject_id', $r->id);
+                                            $summ = 0;
+                                            foreach ($a as $m) $summ += $m->points;
+                                            ?>
+                                            {{$summ}} / 100
+                                        </span>
+
+                                    </span>
+                                    </td>
+                                </tr>
+                            @endforeach
+
 
                             </tbody>
 
